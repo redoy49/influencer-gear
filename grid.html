@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.partners {
+  background-color: #f9f9f9; /* Light background */
+  padding: 20px 0;
+}
+
+.partners-container {
+  max-width: 1440px; /* Section width for desktop */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 equal columns for desktop */
+  gap: 20px; /* Space between logos */
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-container img {
+  height: 50px; /* Adjust logo size */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Responsive for Tablet */
+@media (max-width: 1024px) {
+  .partners-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for tablet */
+  }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .partners-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+  }
+}
+
+  </style>
+</head>
+<body>
+  <section class="partners">
+    <div class="partners-container">
+      <img src="assets/logos/Alibaba.svg" alt="Alibaba">
+      <img src="assets/logos/Alibaba.svg" alt="Alibaba">
+      <img src="assets/logos/Alibaba.svg" alt="Alibaba">
+      <img src="assets/logos/Alibaba.svg" alt="Alibaba">
+      <img src="assets/logos/Alibaba.svg" alt="Alibaba">
+      <img src="assets/logos/Alibaba.svg" alt="Alibaba">
+      <img src="assets/logos/Alibaba.svg" alt="Alibaba">
+    </div>
+  </section>
+  
+</body>
+</html>
