@@ -18,7 +18,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
-  border: 1px solid orange;
 }
 
 .btn {
@@ -72,7 +71,8 @@ body {
 .hero {
   display: flex;
   align-items: center;
-gap: 130px;
+  gap: 130px;
+  margin-bottom: 70px;
 }
 
 .hero .hero-content {
@@ -101,11 +101,46 @@ gap: 130px;
   background-position: center;
   background-size: contain;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-img img {
   width: 100%;
   max-width: 440px;
+}
+
+/* partner styles */
+.partners {
+  margin-bottom: 100px;
+}
+
+.partners-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+  padding: 33px 24px;
+  background: 
+    linear-gradient(
+      to right,
+      transparent 10%,
+      rgb(212, 210, 210) 20%,
+      rgb(212, 210, 210) 80%,
+      transparent 90%
+    ) no-repeat, /* Top border */
+    linear-gradient(
+      to right,
+      transparent 10%,
+      rgb(212, 210, 210) 20%,
+      rgb(212, 210, 210) 80%,
+      transparent 90%
+    ) no-repeat; /* Bottom border */
+  background-size: 100% 1px;
+  background-position: top, bottom;
+}
+
+
+
+.partners-container img {
+  max-width: 100%;
 }
